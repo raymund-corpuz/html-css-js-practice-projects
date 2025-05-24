@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+:root {
+  --dark: #333446;
+  --gray: #7f8caa;
+  --green: #b8cfce;
+  --light: #eaefef;
+  --lighter: #eeeeee;
+  --red: #d76c82;
+  --blue: #5f99ae;
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: var(--dark);
+}
+
+.input-section {
+  margin: auto;
+  display: flex;
+  padding: 20px;
+  width: 700px;
+  height: auto;
+
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-section input,
+select,
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid var(--dark);
+}
+
+input {
+  width: 50%;
+}
+.input-section button {
+  background-color: var(--dark);
+  color: var(--light);
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+}
+
+.item-section {
+  display: flex;
+  width: 600px;
+  height: 100px;
+  color: var(--dark);
+  padding: 20px;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  margin: 15px auto;
+  box-shadow: 2px 3px 10px -6px rgba(0, 0, 0, 0.75);
+}
+.item-section p {
+  font-size: 14px;
+}
+
+.details-btn {
+  display: flex;
+  align-items: end;
+}
+
+.details-btn button {
+  margin-left: 1rem;
+  padding: 6px 16px;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background-color: var(--dark);
+  color: var(--lighter);
+  cursor: pointer;
+  border: 0;
+}
+
+.delt-btn {
+  background-color: var(--red);
+  color: var(--lighter);
+  cursor: pointer;
+  border: 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--dark);
+  color: var(--lighter);
+}
