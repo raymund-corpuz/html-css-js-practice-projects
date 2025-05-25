@@ -36,7 +36,9 @@ header {
   margin-bottom: 15px;
   color: var(--dark);
 }
-
+.sort-function {
+  margin-right: 200px;
+}
 .input-section {
   margin: auto;
   display: flex;
@@ -55,6 +57,7 @@ button {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: 0.5px solid var(--dark);
+  font-size: 14px;
 }
 .input-section select {
   width: auto;
@@ -68,6 +71,11 @@ input {
   background-color: var(--dark);
   color: var(--light);
   cursor: pointer;
+}
+
+.sort-function {
+  display: flex;
+  justify-content: end;
 }
 
 .content {
@@ -86,7 +94,7 @@ input {
   box-shadow: 2px 3px 10px -6px rgba(0, 0, 0, 0.75);
 }
 .item-section p {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .details-btn {
@@ -97,7 +105,7 @@ input {
 .details-btn button {
   margin-left: 1rem;
   padding: 6px 16px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .edit-btn {
@@ -122,6 +130,7 @@ input {
   padding: 1rem;
   background-color: var(--dark);
   color: var(--lighter);
+  font-size: 0.8rem;
 }
 .details {
   display: flex;

@@ -11,34 +11,32 @@
       <h1>Shopping List</h1>
     </header>
 
-    <form class="input-section" id="shopping-form">
-      <input type="text" placeholder="Enter your item here..." id="shopping-input" />
+   
+      <form class="input-section" id="shopping-form">
+        <input type="text" placeholder="Enter your item here..." id="shopping-input" />
+       <select id="itemCategory">
+          <option value="">Select category</option>
+          <option value="🍎 Fruits">🍎 Fruits</option>
+          <option value="🥦 Vegetables">🥦 Vegetables</option>
+          <option value="🥛 Dairy">🥛 Dairy</option>
+          <option value="🍗 Meat">🍗 Meat</option>
+          <option value="🍪 Snacks">🍪 Snacks</option>
+          <option value="🥤 Beverages">🥤 Beverages</option>
+        </select>
+        <button type="submit">Add Item</button>
+      </form>
+      <!-- <div class="sort-function">
+        <select id="itemCategory">
+          <option value="Sort by: All">Sort by: All</option>
+          <option value="Sort by: Category">Sort by: Category</option>
+          <option value="Sort by: Date">Sort by: Date</option>
+        </select>
+      </div> -->
+    
 
-      
-
-      <select id="itemCategory">
-        <option value="">Select category</option>
-        <option value="🍎 Fruits">🍎 Fruits</option>
-        <option value="🥦 Vegetables">🥦 Vegetables</option>
-        <option value="🥛 Dairy">🥛 Dairy</option>
-        <option value="🍗 Meat">🍗 Meat</option>
-        <option value="🍪 Snacks">🍪 Snacks</option>
-        <option value="🥤 Beverages">🥤 Beverages</option>
-      </select>
-      <button type="submit">Add Item</button>
-    </form>
 <!-- CONTENT AREA -->
     <div class="content" id="content-area">
-      <!-- <div class="item-section">
-        <div class="details">
-          <p>Date: 08/31/2025</p>
-          <p>Item: Sample Item</p>
-          <span class="category-details">Category: Sample Category</span>
-        </div>
-        <div class="details-btn">
-          <button class="edit-btn">Edit</button>
-          <button class="delt-btn">Delete</button>
-        </div> -->
+     
       </div>
     </div>
 
