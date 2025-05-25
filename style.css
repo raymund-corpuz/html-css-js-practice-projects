@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
 *,
 *::before,
 *::after {
@@ -11,15 +15,19 @@
   padding: 0;
   font-family: "Montserrat";
 }
+/* --green: #328e6e; 
+--complete: #67ae6e; */
 
 :root {
   --dark: #333446;
   --gray: #7f8caa;
-  --green: #b8cfce;
+  --green: #328e6e;
+  --complete: #67ae6e;
   --light: #eaefef;
   --lighter: #eeeeee;
   --red: #af3e3e;
   --blue: #5f99ae;
+  --brown: #e9eed9;
 }
 
 header {
@@ -43,13 +51,16 @@ header {
 }
 
 .input-section input,
-select,
 button {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: 0.5px solid var(--dark);
 }
-
+.input-section select {
+  width: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
 input {
   width: 50%;
 }
@@ -68,7 +79,7 @@ input {
   width: 600px;
   height: 100px;
   color: var(--dark);
-  padding: 20px;
+  padding: 1rem 1.5rem;
   justify-content: space-between;
   border-radius: 0.5rem;
   margin: 15px auto;
@@ -90,7 +101,7 @@ input {
 }
 
 .edit-btn {
-  background-color: var(--dark);
+  background-color: var(--complete);
   color: var(--lighter);
   cursor: pointer;
   border: 0;
@@ -111,4 +122,26 @@ input {
   padding: 1rem;
   background-color: var(--dark);
   color: var(--lighter);
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  justify-content: space-around;
+}
+
+.date-details {
+  margin-top: -10px;
+  padding: 0;
+}
+.main-details {
+  margin-bottom: -10px;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+.complete-task {
+  background-color: #d0e8c5;
 }
